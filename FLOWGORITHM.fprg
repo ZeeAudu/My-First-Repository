@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Olapade"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-18 04:07:45 PM"/>
+        <attribute name="created" value="T2xhcGFkZTtPTEFQQURFOzIwMjItMTItMTQ7MDM6MjE6MjIgUE07MjQ2NA=="/>
+        <attribute name="edited" value="T2xhcGFkZTtPTEFQQURFOzIwMjItMTItMTg7MDQ6MDc6NDUgUE07MjsyNTg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="range(1,100):"/>
+            <if expression="n % 3 == 0 and n % 5 == 0">
+                <then>
+                    <output expression="print (&quot;FizzBuzz&quot;)" newline="True"/>
+                    <if expression="n % 3 ==0">
+                        <then>
+                            <output expression="&quot;Fizz&quot;" newline="True"/>
+                            <if expression="n % 5 == 0">
+                                <then>
+                                    <output expression="Buzz" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
